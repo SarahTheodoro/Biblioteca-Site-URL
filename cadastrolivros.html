@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Livros</h1>
+        <form action="#" method="post" class="form-cadastro">
+            <div class="form-group">
+                <label for="titulo">Título do Livro:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="ficcao">Ficção</option>
+                    <option value="nao-ficcao">Religião</option>
+                    <option value="fantasia">Culinária</option>
+                    <option value="biografia">Biografia</option>
+                    <option value="romance">Romance</option>
+                    <option value="historia">Infantil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="alugado">Alugado?</label>
+                <input type="radio" id="alugado_sim" name="alugado" value="sim" required>
+                <label for="alugado_sim">Sim</label>
+                <input type="radio" id="alugado_nao" name="alugado" value="nao" required>
+                <label for="alugado_nao">Não</label>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição do Livro:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Cadastrar Livro</button>
+        </form>
+    </div>
+</body>
+</html>
